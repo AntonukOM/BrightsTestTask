@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <form method="get">
+                <div class="form-group">
+                    <h3 class="text-info">Put your URI list here:</h3>
+                    <textarea class="form-control" rows="10" id="urlList" placeholder="just copy the url of the browser line and paste here"></textarea>
+                </div>
+                <div class="form-group">
+                    <button id="clear" type="reset" class="btn btn-default pull-right">Clear</button>
+                    <button id="parse" type="button" class="btn btn-success pull-right">Parse</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="result" class="col-xs-12 col-sm-12 col-md-12">
+
+        </div>
+    </div>
+</div>
+
+
+
+@section scripts {
+    <script src="~/scripts/parse/index.js"></script>
+}
